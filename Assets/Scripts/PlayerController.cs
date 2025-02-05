@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
 	private int count;
 
+	// Audio
+	private PlayerAudioComponent playerAudioComponent;
+
 	// At the start of the game..
 	void Start ()
 	{
@@ -30,6 +33,9 @@ public class PlayerController : MonoBehaviour {
 
 		// Set the text property of our Win Text UI to an empty string, making the 'You Win' (game over message) blank
 		winText.text = "";
+
+		// Set player audio component
+		playerAudioComponent = GetComponent<PlayerAudioComponent>();
 	}
 
 	// Each physics step..
@@ -45,6 +51,11 @@ public class PlayerController : MonoBehaviour {
 		// Add a physical force to our Player rigidbody using our 'movement' Vector3 above, 
 		// multiplying it by 'speed' - our public player speed that appears in the inspector
 		rb.AddForce (movement * speed);
+
+		// Update rolling audio based on velocity
+		//float movementMagnitude = Vector3.Magnitude(movement);
+		//playerAudioComponent.UpdateRollingAudio(movementMagnitude);
+		playerAudioComponent.UpdateRollingAudio(rb.linearVelocity.magnitude);
 	}
 
 	// When this game object intersects a collider with 'is trigger' checked, 
@@ -62,6 +73,9 @@ public class PlayerController : MonoBehaviour {
 
 			// Run the 'SetCountText()' function (see below)
 			SetCountText ();
+
+			// Play audio
+			playerAudioComponent.PlayPickupAudio();
 		}
 	}
 
@@ -76,6 +90,9 @@ public class PlayerController : MonoBehaviour {
 		{
 			// Set the text value of our 'winText'
 			winText.text = "You Win!";
+
+			// Play win audio
+			playerAudioComponent.PlayWinAudio();
 		}
 	}
 }
