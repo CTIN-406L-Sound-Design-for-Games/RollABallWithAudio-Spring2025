@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}" SchemaVersion="123">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_PlayerDistance" ID="{D6373A47-25A7-4464-B204-56EA41801955}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_CollisionVelocityNormalized" ID="{D08E2566-A923-4F4C-BFC4-749F92F6AD14}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{27063161-AE14-4670-BDD7-0BC04AD7240F}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{27063161-AE14-4670-BDD7-0BC04AD7240F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{27063161-AE14-4670-BDD7-0BC04AD7240F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="SC_Default" ID="{8898F1AC-1EAD-4B7F-B5AC-06CE3082D0B6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_AMB_City_LP" ID="{EE4926B4-8BF0-4E15-BB2F-93005DDA8474}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AMB_City_LP" ID="{B77FE9DC-4260-4691-BB8D-23490D3D7C31}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_Forest_LP" ID="{C9884014-331B-4568-AA49-2BE59DB2A0EC}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AMB_Forest_LP" ID="{9798ABC8-6E08-4F8C-959E-0E0DFDC718D0}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AMB_Interior_LP" ID="{73622209-7258-4E37-B586-8D5092283805}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AMB_Interior_LP" ID="{88A173E2-FE53-404C-B519-94ECAC5D482C}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_PlayerDistance" ID="{D6373A47-25A7-4464-B204-56EA41801955}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"/>
+							<Value>3.5737480066378E-312</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_CollisionVelocityNormalized" ID="{D08E2566-A923-4F4C-BFC4-749F92F6AD14}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

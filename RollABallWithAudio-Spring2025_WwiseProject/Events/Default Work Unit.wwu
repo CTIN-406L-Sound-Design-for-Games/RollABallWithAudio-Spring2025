@@ -1,6 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6276EBC8-501C-4469-8682-9605DCBB53FE}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{6276EBC8-501C-4469-8682-9605DCBB53FE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6276EBC8-501C-4469-8682-9605DCBB53FE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AMB_City_LP" ID="{EE4926B4-8BF0-4E15-BB2F-93005DDA8474}">
+					<ChildrenList>
+						<Action Name="" ID="{82EA9910-ACE2-4FF0-A059-BDF8D6543DDE}" ShortID="443832567">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_City_LP" ID="{0296347B-75C8-4A8B-8F10-BCA491C32A9F}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_Forest_LP" ID="{C9884014-331B-4568-AA49-2BE59DB2A0EC}">
+					<ChildrenList>
+						<Action Name="" ID="{AEE81289-5EF6-478F-AFA8-0DAE15E1227B}" ShortID="652976036">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_LP" ID="{B8061AD6-D559-4153-88D3-AFBD557CFF1D}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_Interior_LP" ID="{73622209-7258-4E37-B586-8D5092283805}">
+					<ChildrenList>
+						<Action Name="" ID="{AEE020DC-DAF5-4F59-834D-10AAA01E7C26}" ShortID="865250604">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Interior_LP" ID="{D179A533-5F60-4508-966E-A1A6F6DB31C2}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IMP_Pickup" ID="{A3025B69-49A8-49CC-8FC2-B45F59AD4CDB}">
+					<ChildrenList>
+						<Action Name="" ID="{A262EFF3-DF89-4756-AF15-750680754B26}" ShortID="378072681">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMP_Pickup" ID="{B1B6E0FA-A758-4B21-9580-AB69398B8A9A}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IMP_Wall" ID="{1A6667F8-4FB9-4611-A7F9-8C351D5825AC}">
+					<ChildrenList>
+						<Action Name="" ID="{8AB7A213-BC11-4A41-BD60-4E849185F60F}" ShortID="225613924">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMP_Wall" ID="{5355E97C-9F19-4A4B-9F80-D7EA6F2DA3C9}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MVT_BallRolling_LP" ID="{5F203572-6B4A-48E4-B782-3D03B1D538C2}">
+					<ChildrenList>
+						<Action Name="" ID="{E9C0BAE6-B06E-4255-B240-9DF9E928ADC9}" ShortID="671009109">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MVT_BallRolling_LP" ID="{9DFC15CF-4149-4E66-8DAE-477FB451CD51}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Win" ID="{3AFF3A86-AD83-4C2B-87D7-67279D0AC338}">
+					<ChildrenList>
+						<Action Name="" ID="{A08EA99A-65C6-4A53-A116-AC3FB66D1E6E}" ShortID="694984206">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Win" ID="{879126DB-2BC1-497A-9FCB-A89305753FE3}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AMB_City_LP" ID="{B77FE9DC-4260-4691-BB8D-23490D3D7C31}">
+					<ChildrenList>
+						<Action Name="" ID="{E1D134FB-5680-4055-BFCB-FA9314606991}" ShortID="680092997">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_City_LP" ID="{0296347B-75C8-4A8B-8F10-BCA491C32A9F}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AMB_Forest_LP" ID="{9798ABC8-6E08-4F8C-959E-0E0DFDC718D0}">
+					<ChildrenList>
+						<Action Name="" ID="{CFC8CB5A-DE3E-4912-BF34-DBF9BD18BB22}" ShortID="291145869">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_LP" ID="{B8061AD6-D559-4153-88D3-AFBD557CFF1D}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AMB_Interior_LP" ID="{88A173E2-FE53-404C-B519-94ECAC5D482C}">
+					<ChildrenList>
+						<Action Name="" ID="{F572C2F1-FD5C-435E-85AD-83713B5C47CB}" ShortID="21282754">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Interior_LP" ID="{D179A533-5F60-4508-966E-A1A6F6DB31C2}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

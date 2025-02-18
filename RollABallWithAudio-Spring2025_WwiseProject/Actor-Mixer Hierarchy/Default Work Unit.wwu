@@ -1,6 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="AMB_City_LP" ID="{0296347B-75C8-4A8B-8F10-BCA491C32A9F}" ShortID="209632449">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_City_LP" ID="{FE25260C-6F33-4D7A-A134-991D0C71A4AD}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_City_LP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="669910409"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2C86D529-9E71-4828-9095-AC134BB92A0F}" ShortID="666991891">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_PlayerDistance" ID="{D6373A47-25A7-4464-B204-56EA41801955}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BB8E7E45-1919-4D7F-8B6C-41AD91ED1D5C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>4.9617</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_City_LP" ID="{FE25260C-6F33-4D7A-A134-991D0C71A4AD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMP_Pickup" ID="{B1B6E0FA-A758-4B21-9580-AB69398B8A9A}" ShortID="961751652">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMP_Pickup" ID="{1EE61EDF-0728-4BF8-B207-84E7CED91EF7}">
+							<Language>SFX</Language>
+							<AudioFile>IMP_Pickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="608928612"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMP_Pickup" ID="{1EE61EDF-0728-4BF8-B207-84E7CED91EF7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMP_Wall" ID="{5355E97C-9F19-4A4B-9F80-D7EA6F2DA3C9}" ShortID="598140761">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMP_Wall" ID="{F246E545-2043-46B9-8B27-D4E035FABE62}">
+							<Language>SFX</Language>
+							<AudioFile>IMP_Wall.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="610409004"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{CF39A057-D401-422E-A7A2-DA2D137374F5}" ShortID="408141810">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_CollisionVelocityNormalized" ID="{D08E2566-A923-4F4C-BFC4-749F92F6AD14}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A35282E9-D306-4C44-A609-F7F55DDE3046}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="IMP_Wall" ID="{F246E545-2043-46B9-8B27-D4E035FABE62}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MVT_BallRolling_LP" ID="{9DFC15CF-4149-4E66-8DAE-477FB451CD51}" ShortID="684609225">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MVT_BallRolling_LP" ID="{F53DEF84-E336-4C5E-97F7-D29F9187D0FB}">
+							<Language>SFX</Language>
+							<AudioFile>MVT_BallRolling_LP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="640219862"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3A8C630F-A950-4A58-80DD-FAE92AD398BB}" ShortID="780130671">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F13ED355-75BB-4CB8-9CFD-79E76B72FF16}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{71804777-6857-489F-A4FF-925C055F13BE}" ShortID="781908344">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{48DBE8AD-FBBF-4C73-B544-926F1A924686}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>27</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.94292237442922</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{88E6FE69-5B47-42E3-A588-0C86BA455556}" ShortID="137005613">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{D81168FF-A8F8-49EE-AD4E-C5150C458CDE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-284</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>284</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="MVT_BallRolling_LP" ID="{F53DEF84-E336-4C5E-97F7-D29F9187D0FB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="UI_Win" ID="{879126DB-2BC1-497A-9FCB-A89305753FE3}" ShortID="588081828">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="UI_Win" ID="{80E45E81-B71B-4CB4-B553-479D6489BC33}">
+							<Language>SFX</Language>
+							<AudioFile>UI_Win.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="530190080"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="UI_Win" ID="{80E45E81-B71B-4CB4-B553-479D6489BC33}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_Forest_LP" ID="{B8061AD6-D559-4153-88D3-AFBD557CFF1D}" ShortID="592105584">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_Forest_LP" ID="{421EE807-A34A-4968-8F91-0461BBC07E7D}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_Forest_LP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="202075578"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{A9DFBF20-BEC3-4005-9D10-BF8C0611B4C3}" ShortID="39243727">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_PlayerDistance" ID="{D6373A47-25A7-4464-B204-56EA41801955}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A2915541-1612-424B-8F35-B1DD3B3A5CF2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>4.9617</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_Forest_LP" ID="{421EE807-A34A-4968-8F91-0461BBC07E7D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_Interior_LP" ID="{D179A533-5F60-4508-966E-A1A6F6DB31C2}" ShortID="862987488">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_Interior_LP" ID="{654BA7A7-DC92-44F6-A1C4-3E26746935A8}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_Interior_LP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="421542973"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_Interior_LP" ID="{654BA7A7-DC92-44F6-A1C4-3E26746935A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

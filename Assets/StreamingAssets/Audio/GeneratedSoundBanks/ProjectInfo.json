@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "RollABallWithAudio-Spring2025_WwiseProject",
+   "GUID": "{9C1BF200-2EA5-4C14-840F-B471380A7735}",
+   "Generator": "2024.1.2.8726"
+  },
+  "CacheRoot": "../../../../RollABallWithAudio-Spring2025_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{5C06CCB3-0FFD-45EF-9EEC-B30C70D6D891}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../RollABallWithAudio-Spring2025_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{07482FFC-2DB8-4CBB-928D-0ADE7C96A749}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../RollABallWithAudio-Spring2025_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{F5E8913B-3DC1-47E2-9B7C-E0B4403CA39A}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{6954C079-85C7-595E-57AD-DD70DA3C28F5}"
+ }
+}

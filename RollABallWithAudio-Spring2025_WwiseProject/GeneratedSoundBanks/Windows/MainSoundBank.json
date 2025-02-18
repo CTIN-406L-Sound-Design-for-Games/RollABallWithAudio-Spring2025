@@ -1,0 +1,221 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "534561221",
+    "Type": "User",
+    "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
+    "Language": "SFX",
+    "Hash": "{EE69D1CC-DCC6-9C23-46BD-574EE2DD2A25}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
+    "ShortName": "MainSoundBank",
+    "Path": "MainSoundBank.bnk",
+    "Media": [
+     {
+      "Id": "202075578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Forest_LP.wav",
+      "CachePath": "A5/{A5CC5F12-832B-F99B-01D4-982254D3B3E8}.wem"
+     },
+     {
+      "Id": "421542973",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Interior_LP.wav",
+      "CachePath": "AC/{AC5EF85E-E31E-E64E-F229-AD393BCD8A62}.wem"
+     },
+     {
+      "Id": "530190080",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_Win.wav",
+      "CachePath": "D7/{D7EED9BE-56A5-EB74-9E65-15698C25D27C}.wem"
+     },
+     {
+      "Id": "608928612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "IMP_Pickup.wav",
+      "CachePath": "EE/{EE9337D3-0B54-6CA3-2A84-7ACB911E5245}.wem"
+     },
+     {
+      "Id": "610409004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "IMP_Wall.wav",
+      "CachePath": "0C/{0C50D8E7-7D3E-BAAD-DCB3-53CDE4B7214D}.wem"
+     },
+     {
+      "Id": "640219862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MVT_BallRolling_LP.wav",
+      "CachePath": "1E/{1EFF8BBB-4593-6171-BA8B-DC131140C829}.wem"
+     },
+     {
+      "Id": "669910409",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_City_LP.wav",
+      "CachePath": "B6/{B60A7DEA-FAF7-DE41-56FA-B661A7882440}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "584628495",
+      "Name": "Play_AMB_City_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_City_LP",
+      "GUID": "{EE4926B4-8BF0-4E15-BB2F-93005DDA8474}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "669910409"
+       }
+      ]
+     },
+     {
+      "Id": "149137005",
+      "Name": "Play_AMB_Forest_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_Forest_LP",
+      "GUID": "{C9884014-331B-4568-AA49-2BE59DB2A0EC}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "202075578"
+       }
+      ]
+     },
+     {
+      "Id": "93749488",
+      "Name": "Play_AMB_Interior_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_Interior_LP",
+      "GUID": "{73622209-7258-4E37-B586-8D5092283805}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "421542973"
+       }
+      ]
+     },
+     {
+      "Id": "3369882767",
+      "Name": "Play_IMP_Pickup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_IMP_Pickup",
+      "GUID": "{A3025B69-49A8-49CC-8FC2-B45F59AD4CDB}",
+      "DurationType": "OneShot",
+      "DurationMin": "3",
+      "DurationMax": "3",
+      "MediaRefs": [
+       {
+        "Id": "608928612"
+       }
+      ]
+     },
+     {
+      "Id": "2242885151",
+      "Name": "Play_IMP_Wall",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_IMP_Wall",
+      "GUID": "{1A6667F8-4FB9-4611-A7F9-8C351D5825AC}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "610409004"
+       }
+      ]
+     },
+     {
+      "Id": "4193143717",
+      "Name": "Play_MVT_BallRolling_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MVT_BallRolling_LP",
+      "GUID": "{5F203572-6B4A-48E4-B782-3D03B1D538C2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "640219862"
+       }
+      ]
+     },
+     {
+      "Id": "2823495579",
+      "Name": "Play_UI_Win",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_UI_Win",
+      "GUID": "{3AFF3A86-AD83-4C2B-87D7-67279D0AC338}",
+      "DurationType": "OneShot",
+      "DurationMin": "5",
+      "DurationMax": "5",
+      "MediaRefs": [
+       {
+        "Id": "530190080"
+       }
+      ]
+     },
+     {
+      "Id": "2646299865",
+      "Name": "Stop_AMB_City_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_AMB_City_LP",
+      "GUID": "{B77FE9DC-4260-4691-BB8D-23490D3D7C31}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "705314987",
+      "Name": "Stop_AMB_Forest_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_AMB_Forest_LP",
+      "GUID": "{9798ABC8-6E08-4F8C-959E-0E0DFDC718D0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2159561926",
+      "Name": "Stop_AMB_Interior_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_AMB_Interior_LP",
+      "GUID": "{88A173E2-FE53-404C-B519-94ECAC5D482C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1573010119",
+      "Name": "RTPC_CollisionVelocityNormalized",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_CollisionVelocityNormalized",
+      "GUID": "{D08E2566-A923-4F4C-BFC4-749F92F6AD14}"
+     },
+     {
+      "Id": "3045223865",
+      "Name": "RTPC_PlayerDistance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_PlayerDistance",
+      "GUID": "{D6373A47-25A7-4464-B204-56EA41801955}"
+     },
+     {
+      "Id": "3709966389",
+      "Name": "RTPC_BallSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_BallSpeed",
+      "GUID": "{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6A6287AF-B8A7-52D3-7F20-44CDE9395C56}"
+ }
+}
