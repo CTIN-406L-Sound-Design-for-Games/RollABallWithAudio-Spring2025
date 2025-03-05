@@ -222,6 +222,219 @@
 										<ActiveSource Name="AMB_Interior_LP" ID="{654BA7A7-DC92-44F6-A1C4-3E26746935A8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="AMB_DogBarks" ID="{B57399F5-7A11-4E1C-B52A-B972F4E61E0E}" ShortID="519849784">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F8DF7418-17DA-4331-B195-58A9B34F751D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_DogBark_01" ID="{542AD6C1-E69C-41ED-844C-A93E0823F29D}" ShortID="291640881">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_DogBark_01" ID="{0078E4D2-4078-40F3-8021-7EB824EEF1C5}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_DogBark_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="692504231"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_DogBark_01" ID="{0078E4D2-4078-40F3-8021-7EB824EEF1C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_DogBark_02" ID="{01BBD639-E7E5-409B-936B-B8696CE8703D}" ShortID="13917302">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_DogBark_02" ID="{8D708A12-0022-4F6F-A463-BC23E4E5BEDE}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_DogBark_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="553681184"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_DogBark_02" ID="{8D708A12-0022-4F6F-A463-BC23E4E5BEDE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_DogBark_03" ID="{16589582-873D-4516-88C5-D89B671389AE}" ShortID="18228709">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_DogBark_03" ID="{4D47F886-2D18-483C-8B5F-070CA82E41C5}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_DogBark_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="277048228"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_DogBark_03" ID="{4D47F886-2D18-483C-8B5F-070CA82E41C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_DogBark_04" ID="{4286EA68-7439-4669-B098-0D818582C996}" ShortID="664048533">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_DogBark_04" ID="{39885D5D-E0EC-471F-9F5C-D9DFDE64ACDC}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_DogBark_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149181001"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_DogBark_04" ID="{39885D5D-E0EC-471F-9F5C-D9DFDE64ACDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="AMB_CityForestBlend" ID="{9891B7A8-2C40-45A0-8227-FBFBDF46A9AE}" ShortID="521791732">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_City_LP" ID="{CF88C598-EFC0-496F-8271-D9D5BAFDE1D5}" ShortID="392332763">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_City_LP" ID="{92EE6D99-3480-4BEB-8B1F-F70DBB0BB5F4}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_City_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="669910409"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_City_LP" ID="{92EE6D99-3480-4BEB-8B1F-F70DBB0BB5F4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Forest_LP" ID="{56621305-0E97-4CD4-B0CD-A1FC049898F6}" ShortID="520232736">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Forest_LP" ID="{D537E4B4-FF5E-4FBB-9259-CBC54E6401FD}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Forest_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202075578"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Forest_LP" ID="{D537E4B4-FF5E-4FBB-9259-CBC54E6401FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{6785E40A-0840-41B8-82E9-0E5F4EC80039}" ShortID="823276388">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="RTPC_PlayerDistance" ID="{D6373A47-25A7-4464-B204-56EA41801955}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_City_LP" ID="{CF88C598-EFC0-496F-8271-D9D5BAFDE1D5}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>50.00025</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Forest_LP" ID="{56621305-0E97-4CD4-B0CD-A1FC049898F6}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>40.00025</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="PLR" ID="{160C2525-62C7-47A1-92E0-AEDE728F74AD}" ShortID="726290189">
