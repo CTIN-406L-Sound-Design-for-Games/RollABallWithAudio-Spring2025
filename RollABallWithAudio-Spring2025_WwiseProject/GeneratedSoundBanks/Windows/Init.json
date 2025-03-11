@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{35C907BB-2297-BE87-06A8-07DB25EB4D73}",
+    "Hash": "{EB36E84A-7456-8546-A377-BF4B1E7CDCA3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -62,6 +62,12 @@
       "GUID": "{D08E2566-A923-4F4C-BFC4-749F92F6AD14}"
      },
      {
+      "Id": "2653406601",
+      "Name": "RTPC_PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_PlayerSpeed",
+      "GUID": "{9972F1EF-8618-491B-9941-7F3AD952E407}"
+     },
+     {
       "Id": "3045223865",
       "Name": "RTPC_PlayerDistance",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_PlayerDistance",
@@ -73,9 +79,31 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_BallSpeed",
       "GUID": "{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3045844422",
+      "Name": "SWI_FootstepMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial",
+      "GUID": "{85CB3ABB-63D3-4F76-92E6-6317EF1136F7}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial\\Concrete",
+        "GUID": "{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial\\Grass",
+        "GUID": "{78B92B0F-995C-4CEE-9228-FF58E6F6B419}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{07C8AD96-204B-2AD2-86B2-24EA57D93165}"
+  "FileHash": "{0B783D86-D308-BDA8-5466-149AA24375C7}"
  }
 }

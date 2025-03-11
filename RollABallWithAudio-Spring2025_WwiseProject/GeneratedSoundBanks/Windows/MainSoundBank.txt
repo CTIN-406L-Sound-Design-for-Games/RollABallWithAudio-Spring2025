@@ -3,12 +3,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	149137005	Play_AMB_Forest_LP			\Default Work Unit\Play_AMB_Forest_LP	
 	584628495	Play_AMB_City_LP			\Default Work Unit\Play_AMB_City_LP	
 	705314987	Stop_AMB_Forest_LP			\Default Work Unit\Stop_AMB_Forest_LP	
+	958544762	Play_FLY_Footstep			\Default Work Unit\Play_FLY_Footstep	
 	2159561926	Stop_AMB_Interior_LP			\Default Work Unit\Stop_AMB_Interior_LP	
 	2242885151	Play_IMP_Wall			\Default Work Unit\Play_IMP_Wall	
 	2646299865	Stop_AMB_City_LP			\Default Work Unit\Stop_AMB_City_LP	
 	2823495579	Play_UI_Win			\Default Work Unit\Play_UI_Win	
 	3369882767	Play_IMP_Pickup			\Default Work Unit\Play_IMP_Pickup	
+	3826579360	Play_FLY_Footstep_Concrete			\Default Work Unit\Play_FLY_Footstep_Concrete	
 	4193143717	Play_MVT_BallRolling_LP			\Default Work Unit\Play_MVT_BallRolling_LP	
+	4240657477	Play_FLY_Footstep_Grass			\Default Work Unit\Play_FLY_Footstep_Grass	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3045844422	SWI_FootstepMaterial			\Default Work Unit\SWI_FootstepMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	SWI_FootstepMaterial			
+	4248645337	Grass	SWI_FootstepMaterial			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1573010119	RTPC_CollisionVelocityNormalized			\Default Work Unit\RTPC_CollisionVelocityNormalized	
@@ -16,11 +26,20 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	179709773	FLY_Footstep_Concrete_04	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\81\{816F1362-4E88-125B-39D8-3C9918D89465}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_04		384096
+	197726616	FLY_Footstep_Grass_04	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\AD\{ADA06A12-503F-A669-3373-212187FF6ED3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_04		47300
 	202075578	AMB_Forest_LP	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\A5\{A5CC5F12-832B-F99B-01D4-982254D3B3E8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AMB\AMB_Forest_LP		4032096
+	223869795	FLY_Footstep_Grass_03	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\8A\{8A1EFBCB-C902-E00F-4B31-C08DB0ABC07C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_03		47300
+	274648815	FLY_Footstep_Concrete_03	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\52\{5282C3D0-D0CA-6613-F8F6-85A4927CCC09}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_03		384096
 	421542973	AMB_Interior_LP	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\AC\{AC5EF85E-E31E-E64E-F229-AD393BCD8A62}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AMB\AMB_Interior_LP		4992096
+	466208076	FLY_Footstep_Concrete_02	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\4B\{4B22C58B-4150-7A42-A26F-7DDEE4C62BE1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_02		384096
+	504614697	FLY_Footstep_Grass_01	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\B3\{B333E4D1-C87D-83DC-AFFF-A923849A94A8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_01		47300
 	530190080	UI_Win	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\D7\{D7EED9BE-56A5-EB74-9E65-15698C25D27C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Win		480096
+	577652597	FLY_Footstep_Concrete_01	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\C0\{C0B64B98-B284-B018-BBCE-694039D19E4F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_01		384096
 	608928612	IMP_Pickup	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\EE\{EE9337D3-0B54-6CA3-2A84-7ACB911E5245}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PLR\IMP_Pickup		288096
 	610409004	IMP_Wall	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\0C\{0C50D8E7-7D3E-BAAD-DCB3-53CDE4B7214D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PLR\IMP_Wall		192096
 	640219862	MVT_BallRolling_LP	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\1E\{1EFF8BBB-4593-6171-BA8B-DC131140C829}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PLR\MVT_BallRolling_LP		408096
 	669910409	AMB_City_LP	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\B6\{B60A7DEA-FAF7-DE41-56FA-B661A7882440}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\AMB\AMB_City_LP		3072096
+	990570789	FLY_Footstep_Concrete_05	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\E6\{E66F8D1B-5C71-629D-ADC9-43ABD01F864E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_05		384096
+	1003779714	FLY_Footstep_Grass_02	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\A6\{A6F766E4-DBFD-4853-C892-BBF0D10C265D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_02		47300
 

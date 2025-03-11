@@ -10,11 +10,27 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{E36B3969-7C1B-9298-8F40-0E343C9E5D08}",
+    "Hash": "{26C04836-89E5-1486-3218-92B7474821A4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
     "Media": [
+     {
+      "Id": "179709773",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Concrete_04.wav",
+      "CachePath": "81/{816F1362-4E88-125B-39D8-3C9918D89465}.wem"
+     },
+     {
+      "Id": "197726616",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Grass_04.wav",
+      "CachePath": "AD/{ADA06A12-503F-A669-3373-212187FF6ED3}.wem"
+     },
      {
       "Id": "202075578",
       "Language": "SFX",
@@ -22,6 +38,22 @@
       "Location": "Memory",
       "ShortName": "AMB_Forest_LP.wav",
       "CachePath": "A5/{A5CC5F12-832B-F99B-01D4-982254D3B3E8}.wem"
+     },
+     {
+      "Id": "223869795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Grass_03.wav",
+      "CachePath": "8A/{8A1EFBCB-C902-E00F-4B31-C08DB0ABC07C}.wem"
+     },
+     {
+      "Id": "274648815",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Concrete_03.wav",
+      "CachePath": "52/{5282C3D0-D0CA-6613-F8F6-85A4927CCC09}.wem"
      },
      {
       "Id": "421542973",
@@ -32,12 +64,36 @@
       "CachePath": "AC/{AC5EF85E-E31E-E64E-F229-AD393BCD8A62}.wem"
      },
      {
+      "Id": "466208076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Concrete_02.wav",
+      "CachePath": "4B/{4B22C58B-4150-7A42-A26F-7DDEE4C62BE1}.wem"
+     },
+     {
+      "Id": "504614697",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Grass_01.wav",
+      "CachePath": "B3/{B333E4D1-C87D-83DC-AFFF-A923849A94A8}.wem"
+     },
+     {
       "Id": "530190080",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "UI_Win.wav",
       "CachePath": "D7/{D7EED9BE-56A5-EB74-9E65-15698C25D27C}.wem"
+     },
+     {
+      "Id": "577652597",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Concrete_01.wav",
+      "CachePath": "C0/{C0B64B98-B284-B018-BBCE-694039D19E4F}.wem"
      },
      {
       "Id": "608928612",
@@ -70,6 +126,22 @@
       "Location": "Memory",
       "ShortName": "AMB_City_LP.wav",
       "CachePath": "B6/{B60A7DEA-FAF7-DE41-56FA-B661A7882440}.wem"
+     },
+     {
+      "Id": "990570789",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Concrete_05.wav",
+      "CachePath": "E6/{E66F8D1B-5C71-629D-ADC9-43ABD01F864E}.wem"
+     },
+     {
+      "Id": "1003779714",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FLY_Footstep_Grass_02.wav",
+      "CachePath": "A6/{A6F766E4-DBFD-4853-C892-BBF0D10C265D}.wem"
      }
     ],
     "Events": [
@@ -78,6 +150,7 @@
       "Name": "Play_AMB_City_LP",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_City_LP",
       "GUID": "{EE4926B4-8BF0-4E15-BB2F-93005DDA8474}",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -90,6 +163,7 @@
       "Name": "Play_AMB_Forest_LP",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_Forest_LP",
       "GUID": "{C9884014-331B-4568-AA49-2BE59DB2A0EC}",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -102,6 +176,7 @@
       "Name": "Play_AMB_Interior_LP",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_Interior_LP",
       "GUID": "{73622209-7258-4E37-B586-8D5092283805}",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -110,10 +185,122 @@
       ]
      },
      {
+      "Id": "958544762",
+      "Name": "Play_FLY_Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_FLY_Footstep",
+      "GUID": "{434F9FDB-5158-4AF2-8067-C161EF7D29C9}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4380623",
+      "DurationMax": "2.244924",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3045844422",
+         "Id": "4248645337",
+         "GUID": "{78B92B0F-995C-4CEE-9228-FF58E6F6B419}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "197726616"
+         },
+         {
+          "Id": "223869795"
+         },
+         {
+          "Id": "504614697"
+         },
+         {
+          "Id": "1003779714"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3045844422",
+         "Id": "841620460",
+         "GUID": "{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "179709773"
+         },
+         {
+          "Id": "274648815"
+         },
+         {
+          "Id": "466208076"
+         },
+         {
+          "Id": "577652597"
+         },
+         {
+          "Id": "990570789"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "3826579360",
+      "Name": "Play_FLY_Footstep_Concrete",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_FLY_Footstep_Concrete",
+      "GUID": "{A256B6EC-7BE6-49C3-BEC1-CFEBFE1EC66D}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7817974",
+      "DurationMax": "2.244924",
+      "MediaRefs": [
+       {
+        "Id": "179709773"
+       },
+       {
+        "Id": "274648815"
+       },
+       {
+        "Id": "466208076"
+       },
+       {
+        "Id": "577652597"
+       },
+       {
+        "Id": "990570789"
+       }
+      ]
+     },
+     {
+      "Id": "4240657477",
+      "Name": "Play_FLY_Footstep_Grass",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_FLY_Footstep_Grass",
+      "GUID": "{36FE82AA-1D64-4235-B706-B3B0285CA803}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4380623",
+      "DurationMax": "0.55192393",
+      "MediaRefs": [
+       {
+        "Id": "197726616"
+       },
+       {
+        "Id": "223869795"
+       },
+       {
+        "Id": "504614697"
+       },
+       {
+        "Id": "1003779714"
+       }
+      ]
+     },
+     {
       "Id": "3369882767",
       "Name": "Play_IMP_Pickup",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_IMP_Pickup",
       "GUID": "{A3025B69-49A8-49CC-8FC2-B45F59AD4CDB}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "3",
       "DurationMax": "3",
@@ -128,6 +315,7 @@
       "Name": "Play_IMP_Wall",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_IMP_Wall",
       "GUID": "{1A6667F8-4FB9-4611-A7F9-8C351D5825AC}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "2",
       "DurationMax": "2",
@@ -142,6 +330,7 @@
       "Name": "Play_MVT_BallRolling_LP",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MVT_BallRolling_LP",
       "GUID": "{5F203572-6B4A-48E4-B782-3D03B1D538C2}",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -213,9 +402,31 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_BallSpeed",
       "GUID": "{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3045844422",
+      "Name": "SWI_FootstepMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial",
+      "GUID": "{85CB3ABB-63D3-4F76-92E6-6317EF1136F7}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial\\Concrete",
+        "GUID": "{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWI_FootstepMaterial\\Grass",
+        "GUID": "{78B92B0F-995C-4CEE-9228-FF58E6F6B419}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{4B43C5EB-AA66-E9FC-7AF6-AFFDFF9CF32A}"
+  "FileHash": "{A8075862-4AA8-58E8-CE0D-A9C22EFC6C17}"
  }
 }
