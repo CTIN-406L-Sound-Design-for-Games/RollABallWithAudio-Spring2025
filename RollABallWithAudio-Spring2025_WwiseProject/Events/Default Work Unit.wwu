@@ -140,6 +140,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_FLY_Footstep_Concrete" ID="{A256B6EC-7BE6-49C3-BEC1-CFEBFE1EC66D}">
+					<ChildrenList>
+						<Action Name="" ID="{AEFFC7EA-FBAD-4360-99DC-E129EA6D59E5}" ShortID="437204084">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FLY_Footstep_Concrete" ID="{835A00EE-481C-4B6B-BEF8-37DFB807C6BB}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FLY_Footstep_Grass" ID="{36FE82AA-1D64-4235-B706-B3B0285CA803}">
+					<ChildrenList>
+						<Action Name="" ID="{8A26EEE5-CE95-4AD9-BFEA-61A83EE39C20}" ShortID="963044142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FLY_Footstep_Grass" ID="{3ACADE5E-6379-4373-81F0-5727FEB13379}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FLY_Footstep" ID="{434F9FDB-5158-4AF2-8067-C161EF7D29C9}">
+					<ChildrenList>
+						<Action Name="" ID="{CDBA8707-5491-456F-A8B3-E1EC97EC2030}" ShortID="1048978931">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FLY_Footstep" ID="{7DF475D6-336B-4159-88E9-F37838826678}" WorkUnitID="{952EE48C-E254-4168-A27B-0E4C0423A4F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

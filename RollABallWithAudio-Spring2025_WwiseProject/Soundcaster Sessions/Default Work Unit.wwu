@@ -14,6 +14,10 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_FLY_Footstep" ID="{434F9FDB-5158-4AF2-8067-C161EF7D29C9}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_AMB_Forest_LP" ID="{C9884014-331B-4568-AA49-2BE59DB2A0EC}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -45,7 +49,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
