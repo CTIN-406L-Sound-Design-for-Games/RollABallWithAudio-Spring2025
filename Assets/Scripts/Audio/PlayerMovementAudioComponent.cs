@@ -1,7 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using UnityEditor.UIElements;
 using UnityEngine;
+
+/** Data structure for mapping a footstep material's surface tag to a Wwise switch **/
+[System.Serializable]
+public class FootstepMaterialMapping
+{
+    public string surfaceTag;
+    public AK.Wwise.Switch wwiseSwitch;
+}
 
 /** Component that handles player movement audio **/
 public class PlayerMovementAudioComponent : MonoBehaviour
@@ -10,10 +18,7 @@ public class PlayerMovementAudioComponent : MonoBehaviour
     AK.Wwise.Event footstepAudioEvent; // Audio event for footsteps
 
     [SerializeField]
-    AK.Wwise.Switch footstepMaterialSwitch_Concrete; // Switcch for concrete
-
-    [SerializeField]
-    AK.Wwise.Switch footstepMaterialSwitch_Grass; // Switch for grass
+    FootstepMaterialMapping[] footstepMaterialMappings; // SurfaceTag-to-WwiseSwitch mappings for footsteps
 
     [SerializeField]
     AK.Wwise.RTPC playerSpeedRtpc; // RTPC for player speed
@@ -27,8 +32,6 @@ public class PlayerMovementAudioComponent : MonoBehaviour
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
-
-        //AkSoundEngine.SetState("STA_HelmetEquip", "Unequipped");
     }
 
     private void Update()
@@ -63,25 +66,22 @@ public class PlayerMovementAudioComponent : MonoBehaviour
         RaycastHit[] hits = Physics.RaycastAll(startPosition, Vector3.down, footstepRaycastDistance);
 
         // Iterate through the raycast hits to see if we find any objects that match our surface tags
-        for (int i = 0; i < hits.Length; i++)
+        for (int hitIdx = 0; hitIdx < hits.Length; hitIdx++)
         {
-            RaycastHit hit = hits[i];
+            RaycastHit hit = hits[hitIdx];
             Collider hitCollider = hit.collider;
 
-            // If we find a valid surface, we set the appropriate Wwise switch and break out of the loop
-            if (hitCollider.CompareTag("Concrete")) // Concrete
+            // If we find a matching surface, we set the appropriate Wwise switch and break out of the loop
+            for (int matIdx = 0; matIdx < footstepMaterialMappings.Length; matIdx++)
             {
-                footstepMaterialSwitch_Concrete.SetValue(this.gameObject);
-                Debug.Log("PlayFootstepAudio(): Concrete");
+                FootstepMaterialMapping materialMapping = footstepMaterialMappings[matIdx];
+                if (hitCollider.CompareTag(materialMapping.surfaceTag))
+                {
+                    materialMapping.wwiseSwitch.SetValue(this.gameObject);
+                    Debug.LogFormat("PlayFootstepAudio(): {0}", materialMapping.surfaceTag);
 
-                break;
-            }
-            else if (hitCollider.CompareTag("Grass")) // Grass
-            {
-                footstepMaterialSwitch_Grass.SetValue(this.gameObject);
-                Debug.Log("PlayFootstepAudio(): Grass");
-
-                break;
+                    break;
+                }
             }
         }
 
