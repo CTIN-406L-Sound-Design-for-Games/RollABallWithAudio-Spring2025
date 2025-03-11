@@ -40,17 +40,28 @@ public class FirstPersonFootstepAudioTrigger : MonoBehaviour
             return;
         }
 
-        // Reset elapsed time and early return if we're either not moving or not on the ground
-        bool isMoving = characterController.velocity.magnitude > 0f;
-        bool isGrounded = characterController.isGrounded;
-        if (!isMoving || !isGrounded)
+        // Reset elapsed time and early return if we're not moving
+        bool isMoving = (characterController.velocity.magnitude > 0f);
+        if (!isMoving)
         {
-            timeElapsed = 0f;
+            // Reset to random time between 0 and half of walk interval;
+            // this adds some natural variation to starting and stopping movement
+            timeElapsed = Random.Range(0f, walkInterval / 2f);
+            return;
+        }
+
+        // Reset elapsed time and early return if we're not moving
+        bool isGrounded = characterController.isGrounded;
+        if (!isGrounded)
+        {
+            // Reset to max interval; this ensures we get a footstep upon landing
+            // (you can set this to 0 if you'd like a custom "landing sound" triggered elsewhere)
+            timeElapsed = Mathf.Max(walkInterval, runInterval);
             return;
         }
 
         // Determine current timer interval based on whether we're currently walking or running
-        bool isRunning = characterController.velocity.magnitude > runSpeedThreshold;
+        bool isRunning = (characterController.velocity.magnitude > runSpeedThreshold);
         float timerBasedFootstepsInterval = isRunning ? runInterval : walkInterval;
 
         // Timer interval has been reached; trigger a footstep
