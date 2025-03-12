@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 /** Data structure for mapping a footstep material's surface tag to a Wwise switch **/
