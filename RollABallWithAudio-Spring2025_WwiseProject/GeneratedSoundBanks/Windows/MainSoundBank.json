@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{26C04836-89E5-1486-3218-92B7474821A4}",
+    "Hash": "{44C82209-0795-F609-0F2A-7F1F2502DED1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
@@ -38,14 +38,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Forest_LP.wav",
       "CachePath": "A5/{A5CC5F12-832B-F99B-01D4-982254D3B3E8}.wem"
-     },
-     {
-      "Id": "223869795",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "FLY_Footstep_Grass_03.wav",
-      "CachePath": "8A/{8A1EFBCB-C902-E00F-4B31-C08DB0ABC07C}.wem"
      },
      {
       "Id": "274648815",
@@ -206,9 +198,6 @@
           "Id": "197726616"
          },
          {
-          "Id": "223869795"
-         },
-         {
           "Id": "504614697"
          },
          {
@@ -283,9 +272,6 @@
       "MediaRefs": [
        {
         "Id": "197726616"
-       },
-       {
-        "Id": "223869795"
        },
        {
         "Id": "504614697"
@@ -427,6 +413,6 @@
     ]
    }
   ],
-  "FileHash": "{756E576E-5D37-F5D0-18AE-8DCF0D38291A}"
+  "FileHash": "{60794C60-B99D-F932-4C5F-D69521B43A02}"
  }
 }

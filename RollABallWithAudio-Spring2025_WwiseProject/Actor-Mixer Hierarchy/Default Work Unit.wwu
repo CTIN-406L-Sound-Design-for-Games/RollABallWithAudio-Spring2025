@@ -920,28 +920,6 @@
 														<ActiveSource Name="FLY_Footstep_Grass_02" ID="{18D3F25C-1AB4-4337-ABC1-9AE500F3CDA1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FLY_Footstep_Grass_03" ID="{7F68D993-7989-4794-B469-350127D9F05B}" ShortID="101944926">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{861F86A1-3A57-496F-8969-181FEACE73C0}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FLY_Footstep_Grass_03" ID="{3467FE25-727E-4DA5-A023-8118A697504A}">
-															<Language>SFX</Language>
-															<AudioFile>FLY_Footstep_Grass_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="223869795"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FLY_Footstep_Grass_03" ID="{3467FE25-727E-4DA5-A023-8118A697504A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
 												<Sound Name="FLY_Footstep_Grass_04" ID="{FAA35984-8873-4B54-A790-3E221E614783}" ShortID="308494173">
 													<ReferenceList>
 														<Reference Name="Conversion">
