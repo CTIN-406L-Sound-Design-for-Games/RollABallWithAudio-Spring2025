@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4887858F-96A3-4308-BD7C-754390683DCA}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{4887858F-96A3-4308-BD7C-754390683DCA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4887858F-96A3-4308-BD7C-754390683DCA}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="STA_GameState" ID="{392EAC8F-BC97-4FD3-96F8-6C7778F685AC}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{04EE6B9E-D3AF-4F3F-842F-71982CE77644}"/>
+						<State Name="Idle" ID="{05E65CE7-2DDB-4B60-B4FE-09F19B7400B7}"/>
+						<State Name="PickedUp" ID="{910D420F-2B6B-4BA5-BB2D-A4DEBD64620E}"/>
+						<State Name="Win" ID="{6382BC69-4B53-4D91-9E39-7F211819976D}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

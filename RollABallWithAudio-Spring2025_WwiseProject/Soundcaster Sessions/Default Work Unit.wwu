@@ -48,7 +48,9 @@
 							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Idle" ID="{05E65CE7-2DDB-4B60-B4FE-09F19B7400B7}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}"/>
 					</CurrentSwitchList>
