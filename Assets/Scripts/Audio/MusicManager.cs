@@ -15,7 +15,7 @@ public class MusicManager : MonoBehaviour
     AK.Wwise.State musicWinState;
 
     [SerializeField]
-    AK.Wwise.Trigger musicStingerTrigger;
+    AK.Wwise.Trigger musicPickupStingerTrigger;
 
     [SerializeField]
     float pickupTimeIncrementAmount = 6f;
@@ -54,40 +54,45 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    // Reset book-keeping for pickup state tracking
     void ResetPickupBookkeeping()
     {
         isInPickupState = false;
         pickupTimeRemaining = 0f;
     }
 
+    // Transition to idle state
     public void ToIdleState()
     {
-        if (!didWin)
+        if (!didWin) // Only transition if we haven't already won
         {
-            musicIdleState.SetValue();
+            musicIdleState.SetValue(); // Set the Wwise state
 
-            ResetPickupBookkeeping();
+            ResetPickupBookkeeping(); // Reset pickup book-keeping
         }
     }
 
+    // Transition to pickup state
     public void ToPickupState()
     {
-        musicStingerTrigger.Post(this.gameObject);
+        musicPickupStingerTrigger.Post(this.gameObject); // Always play stinger
 
-        if (!didWin)
+        if (!didWin) // Only transition if we haven't already won
         {
-            musicPickupState.SetValue();
+            musicPickupState.SetValue(); // Set the Wwise state
 
+            // Set pickup book-keeping
             isInPickupState = true;
             pickupTimeRemaining = pickupTimeIncrementAmount;
         }
     }
 
+    // Transition to win state
     public void ToWinState()
     {
-        musicWinState.SetValue();
+        musicWinState.SetValue(); // Set the Wwise state
 
-        didWin = true;
-        ResetPickupBookkeeping();
+        didWin = true; // Update win flag
+        ResetPickupBookkeeping(); // Reset pickup book-keeping
     }
 }
