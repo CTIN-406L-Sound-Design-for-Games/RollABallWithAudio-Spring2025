@@ -19,6 +19,9 @@ public class BallAudioComponent : MonoBehaviour
     [SerializeField]
     AK.Wwise.RTPC ballSpeedRtpc; // RTPC for the ball speed
 
+    [SerializeField]
+    MusicManager musicManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,11 +40,13 @@ public class BallAudioComponent : MonoBehaviour
     public void PlayPickupAudio()
     {
         pickupAudioEvent.Post(this.gameObject);
+        musicManager.ToPickupState();
     }
 
     // Play win SFX. Called within PlayerController.SetCountText()
     public void PlayWinAudio()
     {
         winAudioEvent.Post(this.gameObject);
+        musicManager.ToWinState();
     }
 }

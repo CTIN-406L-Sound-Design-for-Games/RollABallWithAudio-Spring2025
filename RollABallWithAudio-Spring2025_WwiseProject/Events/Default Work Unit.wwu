@@ -173,6 +173,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MUS_BGM" ID="{83B21C0C-0060-4CCC-94CB-CC9126D4BC6A}">
+					<ChildrenList>
+						<Action Name="" ID="{91D55C3C-7DFF-45E2-B873-C04D21DBF9CC}" ShortID="415723639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_BGM" ID="{1CF62C64-E42E-4A8D-A78D-9F3A9059BB31}" WorkUnitID="{796FEB7A-6D1A-4C2A-B87A-F90A10619033}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

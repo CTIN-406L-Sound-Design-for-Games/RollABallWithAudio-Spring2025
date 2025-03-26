@@ -1,5 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	530992273	STA_GameState			\Default Work Unit\STA_GameState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STA_GameState			
+	979765101	Win	STA_GameState			
+	1874288895	Idle	STA_GameState			
+	3593755026	PickedUp	STA_GameState			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	712897226	MUS			\Default Work Unit\Master Audio Bus\MUS	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

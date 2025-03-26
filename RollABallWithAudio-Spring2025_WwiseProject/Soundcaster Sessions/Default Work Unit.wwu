@@ -26,6 +26,10 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_MUS_BGM" ID="{83B21C0C-0060-4CCC-94CB-CC9126D4BC6A}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_AMB_Interior_LP" ID="{73622209-7258-4E37-B586-8D5092283805}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -49,7 +53,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Idle" ID="{05E65CE7-2DDB-4B60-B4FE-09F19B7400B7}"/>
+						<CurrentStateRef Name="Win" ID="{6382BC69-4B53-4D91-9E39-7F211819976D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{80B2AEBD-81A9-45F1-80AF-3CF155EB0C53}"/>

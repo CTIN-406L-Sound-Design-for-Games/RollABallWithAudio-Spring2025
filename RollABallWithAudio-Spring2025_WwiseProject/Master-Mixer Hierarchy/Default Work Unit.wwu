@@ -12,6 +12,15 @@
 					<ChildrenList>
 						<Bus Name="SFX" ID="{861F86A1-3A57-496F-8969-181FEACE73C0}"/>
 						<Bus Name="UI" ID="{6F735E76-BC89-4391-8D31-D1B8DCBCF9C5}"/>
+						<Bus Name="MUS" ID="{0C4FC5AB-2A0C-4198-82BC-F58CD21D33F4}">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
