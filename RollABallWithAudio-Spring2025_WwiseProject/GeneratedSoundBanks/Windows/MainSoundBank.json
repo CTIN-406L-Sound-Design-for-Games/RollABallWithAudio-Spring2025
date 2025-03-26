@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{31986BE6-3C86-CB59-E0E7-0676DFB50C5D}",
+    "Hash": "{7862A7D2-5AC6-2123-85DF-7727200AD50F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
@@ -703,6 +703,12 @@
       "GUID": "{D08E2566-A923-4F4C-BFC4-749F92F6AD14}"
      },
      {
+      "Id": "2653406601",
+      "Name": "RTPC_PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_PlayerSpeed",
+      "GUID": "{9972F1EF-8618-491B-9941-7F3AD952E407}"
+     },
+     {
       "Id": "3045223865",
       "Name": "RTPC_PlayerDistance",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\RTPC_PlayerDistance",
@@ -773,6 +779,6 @@
     ]
    }
   ],
-  "FileHash": "{B9767443-6973-B758-C4A3-3F717B3CF960}"
+  "FileHash": "{85955D71-EBAB-6A83-4BFB-0A25AB78BAAE}"
  }
 }

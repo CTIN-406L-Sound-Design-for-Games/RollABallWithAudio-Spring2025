@@ -32,6 +32,7 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1573010119	RTPC_CollisionVelocityNormalized			\Default Work Unit\RTPC_CollisionVelocityNormalized	
+	2653406601	RTPC_PlayerSpeed			\Default Work Unit\RTPC_PlayerSpeed	
 	3045223865	RTPC_PlayerDistance			\Default Work Unit\RTPC_PlayerDistance	
 	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
 

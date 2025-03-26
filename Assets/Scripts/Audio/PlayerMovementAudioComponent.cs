@@ -45,7 +45,10 @@ public class PlayerMovementAudioComponent : MonoBehaviour
             return;
         }
 
-        playerSpeedRtpc.SetGlobalValue(characterController.velocity.magnitude);
+        Vector3 playerVelocity = characterController.velocity;
+        playerVelocity.y = 0f; // Zero out y component -- we don't count jumps, only x-z movement
+
+        playerSpeedRtpc.SetGlobalValue(playerVelocity.magnitude);
     }
 
     // Play footstep audio from an animation event (used for third-person footsteps)
