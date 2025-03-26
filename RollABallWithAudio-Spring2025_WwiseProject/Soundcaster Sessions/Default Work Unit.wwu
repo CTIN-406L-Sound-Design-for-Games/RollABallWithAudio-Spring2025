@@ -44,6 +44,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_PlayerSpeed" ID="{9972F1EF-8618-491B-9941-7F3AD952E407}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"/>
 							<Value>3.5737480066378E-312</Value>
 						</RTPCValue>

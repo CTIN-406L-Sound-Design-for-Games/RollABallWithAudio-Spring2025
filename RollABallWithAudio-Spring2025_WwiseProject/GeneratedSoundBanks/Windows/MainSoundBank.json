@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{7862A7D2-5AC6-2123-85DF-7727200AD50F}",
+    "Hash": "{AC4CD014-9150-3E8B-A7B1-6CE7B13BCCF4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
@@ -112,6 +112,22 @@
       "CachePath": "AC/{AC5EF85E-E31E-E64E-F229-AD393BCD8A62}.wem"
      },
      {
+      "Id": "443395678",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS_Stinger_132bpm_Am_Pickup_01.wav",
+      "CachePath": "9A/{9A7F352F-BF60-E962-81D6-1D6549E65A53}.wem"
+     },
+     {
+      "Id": "455750944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS_Stinger_132bpm_Am_Pickup_02.wav",
+      "CachePath": "2D/{2D716ED9-7A0C-F9ED-74A1-38E2D9C85FDE}.wem"
+     },
+     {
       "Id": "462745788",
       "Language": "SFX",
       "Streaming": "false",
@@ -184,6 +200,14 @@
       "CachePath": "1E/{1EFF8BBB-4593-6171-BA8B-DC131140C829}.wem"
      },
      {
+      "Id": "660634954",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS_Stinger_132bpm_Am_Pickup_03.wav",
+      "CachePath": "0A/{0A8A187A-3F6C-C598-1E34-45FCBA4CFDC0}.wem"
+     },
+     {
       "Id": "669910409",
       "Language": "SFX",
       "Streaming": "false",
@@ -198,6 +222,14 @@
       "Location": "Memory",
       "ShortName": "MUS_BGM_132bpm_Win_DrumsHi_01.wav",
       "CachePath": "0C/{0C20ADBD-8C9A-9BF3-D9FF-29C2B970362F}.wem"
+     },
+     {
+      "Id": "731721196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUS_Stinger_132bpm_Am_Pickup_04.wav",
+      "CachePath": "83/{83CB4596-75EB-FB2F-21A6-95083A421201}.wem"
      },
      {
       "Id": "746820648",
@@ -501,6 +533,20 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MUS_BGM",
       "GUID": "{83B21C0C-0060-4CCC-94CB-CC9126D4BC6A}",
       "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "443395678"
+       },
+       {
+        "Id": "455750944"
+       },
+       {
+        "Id": "660634954"
+       },
+       {
+        "Id": "731721196"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -693,6 +739,24 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "2166320399",
+      "Name": "Trigger_TRG_MusicPickup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Trigger_TRG_MusicPickup",
+      "GUID": "{FD434D8A-365F-4A3C-AF4B-0EAC5A82CE80}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionTrigger": [
+       {
+        "Id": "1926196834",
+        "Name": "TRG_MusicPickup",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\TRG_MusicPickup",
+        "GUID": "{AEE1CEB1-53A9-4557-AB2C-4215C5F05059}"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -776,9 +840,17 @@
        }
       ]
      }
+    ],
+    "Triggers": [
+     {
+      "Id": "1926196834",
+      "Name": "TRG_MusicPickup",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\TRG_MusicPickup",
+      "GUID": "{AEE1CEB1-53A9-4557-AB2C-4215C5F05059}"
+     }
     ]
    }
   ],
-  "FileHash": "{85955D71-EBAB-6A83-4BFB-0A25AB78BAAE}"
+  "FileHash": "{2431FB5E-A9CB-E41B-DF84-557FBF4101A4}"
  }
 }

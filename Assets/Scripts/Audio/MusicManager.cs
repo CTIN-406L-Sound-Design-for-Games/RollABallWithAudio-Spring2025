@@ -15,6 +15,9 @@ public class MusicManager : MonoBehaviour
     AK.Wwise.State musicWinState;
 
     [SerializeField]
+    AK.Wwise.Trigger musicStingerTrigger;
+
+    [SerializeField]
     float pickupTimeIncrementAmount = 6f;
 
     bool isInPickupState = false;
@@ -59,27 +62,25 @@ public class MusicManager : MonoBehaviour
 
     public void ToIdleState()
     {
-        if (didWin)
+        if (!didWin)
         {
-            return;
+            musicIdleState.SetValue();
+
+            ResetPickupBookkeeping();
         }
-
-        musicIdleState.SetValue();
-
-        ResetPickupBookkeeping();
     }
 
     public void ToPickupState()
     {
-        if (didWin)
-        {
-            return;
-        }
+        musicStingerTrigger.Post(this.gameObject);
 
-        musicPickupState.SetValue();
-        
-        isInPickupState = true;
-        pickupTimeRemaining = pickupTimeIncrementAmount;
+        if (!didWin)
+        {
+            musicPickupState.SetValue();
+
+            isInPickupState = true;
+            pickupTimeRemaining = pickupTimeIncrementAmount;
+        }
     }
 
     public void ToWinState()

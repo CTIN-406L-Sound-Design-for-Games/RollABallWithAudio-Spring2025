@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="MUS_BGM" ID="{1CF62C64-E42E-4A8D-A78D-9F3A9059BB31}" ShortID="742732109">
 					<PropertyList>
+						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 						<Property Name="Tempo" Type="Real64" Value="132"/>
 					</PropertyList>
 					<ReferenceList>
@@ -2336,8 +2337,203 @@
 								</Local>
 							</Reference>
 						</ObjectList>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{80765209-5DFF-4C86-A128-4DFBDF124525}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="MUS_Stinger_132bpm_Am_Pickup" ID="{F8E076C6-A0AD-4199-B59E-43AF2AEB4F6B}" WorkUnitID="{796FEB7A-6D1A-4C2A-B87A-F90A10619033}"/>
+											</Reference>
+											<Reference Name="Trigger">
+												<ObjectRef Name="TRG_MusicPickup" ID="{AEE1CEB1-53A9-4557-AB2C-4215C5F05059}" WorkUnitID="{57CDA290-B967-4BAF-B659-A9B4940EBED9}"/>
+											</Reference>
+										</ReferenceList>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
+				<MusicSegment Name="MUS_Stinger_132bpm_Am_Pickup" ID="{F8E076C6-A0AD-4199-B59E-43AF2AEB4F6B}" ShortID="392378572">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="7272.72916666667"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="MUS_Stinger_132bpm_Am_Pickup_Random" ID="{AC74F8C1-DD19-45D4-9DB6-DE0A8E806C44}" ShortID="154089391">
+							<PropertyList>
+								<Property Name="MusicTrackType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{314E7284-CC7D-45A6-92ED-9BB2A2EF75E6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{DBFE0087-0752-4CEB-B0A7-472F9570473B}">
+									<Language>SFX</Language>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="443395678"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{96D4D32A-9334-4E60-976D-44B06B5549C5}">
+									<Language>SFX</Language>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="455750944"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{B81E2CFA-111D-4489-BBA5-E3ED3800FD2C}">
+									<Language>SFX</Language>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="660634954"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{4C81A7C6-932F-4534-8B9A-2CB9152E73F3}">
+									<Language>SFX</Language>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="731721196"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{AF7040CC-9C38-499C-A03A-9B921836AFF2}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{78E2AAAC-8D35-45EF-B97D-F4C4C212A47D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{DBFE0087-0752-4CEB-B0A7-472F9570473B}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{2992C654-2165-4EFF-ACFA-150EAFE1A9D7}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{C7559B22-9C59-42AF-BCE4-EAC346DD8C4F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{96D4D32A-9334-4E60-976D-44B06B5549C5}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{EF06E4C6-A9CC-4E46-A513-B6D4337D8B47}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{52414CBD-1C2D-442D-8EE3-2898BA4A1C19}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{B81E2CFA-111D-4489-BBA5-E3ED3800FD2C}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{964401DB-7F80-4626-9C19-ACB82B4CA240}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{5220CF61-A13F-4278-9FDC-33B2474BC634}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{4C81A7C6-932F-4534-8B9A-2CB9152E73F3}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{07B1D678-CC90-42EB-BFE5-0BAAA1DD579B}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{BEF3E1DE-B8FB-41DE-9413-9EE3343B22D5}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

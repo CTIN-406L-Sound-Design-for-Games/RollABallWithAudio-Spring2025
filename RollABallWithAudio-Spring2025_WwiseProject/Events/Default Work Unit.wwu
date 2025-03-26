@@ -184,6 +184,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Trigger_TRG_MusicPickup" ID="{FD434D8A-365F-4A3C-AF4B-0EAC5A82CE80}">
+					<ChildrenList>
+						<Action Name="" ID="{ACA8F499-EDB7-44DF-85CD-6C4CE1909374}" ShortID="888571892">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TRG_MusicPickup" ID="{AEE1CEB1-53A9-4557-AB2C-4215C5F05059}" WorkUnitID="{57CDA290-B967-4BAF-B659-A9B4940EBED9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

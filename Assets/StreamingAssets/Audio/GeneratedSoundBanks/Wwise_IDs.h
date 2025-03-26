@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID STOP_AMB_CITY_LP = 2646299865U;
         static const AkUniqueID STOP_AMB_FOREST_LP = 705314987U;
         static const AkUniqueID STOP_AMB_INTERIOR_LP = 2159561926U;
+        static const AkUniqueID TRIGGER_TRG_MUSICPICKUP = 2166320399U;
     } // namespace EVENTS
 
     namespace STATES
@@ -68,6 +69,11 @@ namespace AK
         static const AkUniqueID RTPC_PLAYERDISTANCE = 3045223865U;
         static const AkUniqueID RTPC_PLAYERSPEED = 2653406601U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID TRG_MUSICPICKUP = 1926196834U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
