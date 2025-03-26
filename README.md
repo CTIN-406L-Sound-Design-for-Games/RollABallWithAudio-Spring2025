@@ -4,6 +4,17 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 10: Interactive Music
+1. [Download the `week10-interactive-music` version of the project](https://github.com/CTIN-406L-Sound-Design-for-Games/RollABallWithAudio-Spring2025/archive/refs/heads/week10-interactive-music.zip)
+2. The following may be helpful for **Project 3**:
+	- Unity:
+	    - Assets/Scripts/Audio/MusicManager.cs
+	    - Assets/Scenes/Week10_Music.unity
+	- Wwise:
+		- \Interactive Music Hierarchy\Default Work Unit\MUS_BGM
+		- \States\Default Work Unit\STA_GameState
+		- \Triggers\Default Work Unit\TRG_MusicPickup
+
 ## Week 9: Dynamically Driven Audio
 1. [Download the `week9-dynamically-driven-audio` version of the project](https://github.com/CTIN-406L-Sound-Design-for-Games/RollABallWithAudio-Spring2025/archive/refs/heads/week9-dynamically-driven-audio.zip)
 2. The following may be helpful for **Project 2**:
