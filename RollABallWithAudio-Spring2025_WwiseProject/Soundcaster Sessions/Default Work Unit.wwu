@@ -37,6 +37,10 @@
 							<ObjectRef Name="Stop_AMB_Interior_LP" ID="{88A173E2-FE53-404C-B519-94ECAC5D482C}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
 							<Position X="2" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_MVT_BallRolling_LP" ID="{5F203572-6B4A-48E4-B782-3D03B1D538C2}" WorkUnitID="{6276EBC8-501C-4469-8682-9605DCBB53FE}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -49,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}"/>
-							<Value>3.5737480066378E-312</Value>
+							<Value>8.54186265286924</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_CollisionVelocityNormalized" ID="{D08E2566-A923-4F4C-BFC4-749F92F6AD14}"/>
@@ -57,6 +61,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Unequipped" ID="{40754454-1E12-4719-90BD-7307CAA68B9C}"/>
 						<CurrentStateRef Name="Win" ID="{6382BC69-4B53-4D91-9E39-7F211819976D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

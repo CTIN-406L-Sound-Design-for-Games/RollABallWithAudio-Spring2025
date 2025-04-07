@@ -40,6 +40,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Trigger	ID	Name			Wwise Object Path	Notes
 	1926196834	TRG_MusicPickup			\Default Work Unit\TRG_MusicPickup	
 
+Effect plug-ins	ID	Name	Type				Notes
+	3025917178	Standard	Wwise Flanger			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4580545	MUS_BGM_132bpm_Win_Piano_01	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\49\{49EA927C-1E98-E4A1-92D6-B919D08A4F12}.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM\MUS_BGM_Win\MUS_BGM_Win_01\MUS_BGM_132bpm_Win_Piano_01		5585552
 	20420263	MUS_BGM_132bpm_Idle_DrumsHi_02	C:\Users\david\Documents\projects\CTIN406L\Spring2025\projects\RollABallWithAudio-Spring2025\RollABallWithAudio-Spring2025_WwiseProject\.cache\53\{53A8BD25-E849-1095-831F-A20BEDDBA21F}.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM\MUS_BGM_Idle\MUS_BGM_Idle_02\MUS_BGM_132bpm_Idle_DrumsHi_02		2094644

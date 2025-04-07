@@ -1540,9 +1540,50 @@
 										<Property Name="FeedBackLevel" Type="Real32" Value="0.7"/>
 										<Property Name="FeedForwardLevel" Type="Real32" Value="0.7"/>
 										<Property Name="ModDepth" Type="Real32" Value="65"/>
+										<Property Name="ModFrequency" Type="Real32" Value="0.5"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
 										<Property Name="ModWaveform" Type="int32" Value="1"/>
+										<Property Name="WetDryMix" Type="Real32" Value="30"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1B345133-FA34-4E69-9CD5-B78A1071AA6B}" ShortID="300418761">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="ModDepth"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_BallSpeed" ID="{FC5926B0-95CB-4C31-8153-8F54C4B11A46}" WorkUnitID="{5CDE25EB-0D14-4E3E-86EA-DFD106514A7A}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{0D221479-592A-47BB-A4E4-7372E40C2019}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>65</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 								<Effect Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>

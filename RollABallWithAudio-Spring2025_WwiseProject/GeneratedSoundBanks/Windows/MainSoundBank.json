@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{AC4CD014-9150-3E8B-A7B1-6CE7B13BCCF4}",
+    "Hash": "{D50F7AC3-6F26-5031-D8B4-B0308354D819}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
@@ -352,6 +352,18 @@
       "CachePath": "FF/{FFA939E1-3837-6D0B-CAC4-D7BB3D8767D4}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3025917178",
+       "Name": "Standard",
+       "ObjectPath": "\\Effects\\Factory Effects\\Flanger\\Flanging\\Standard",
+       "GUID": "{1A2EAB31-6283-4C0D-89B2-F050DF89D421}",
+       "LibName": "Wwise Flanger",
+       "LibId": "8192003"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "584628495",
@@ -694,7 +706,14 @@
        {
         "Id": "640219862"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3025917178"
+        }
+       ]
+      }
      },
      {
       "Id": "2823495579",
@@ -851,6 +870,6 @@
     ]
    }
   ],
-  "FileHash": "{2431FB5E-A9CB-E41B-DF84-557FBF4101A4}"
+  "FileHash": "{3462D92D-ADB6-D6C0-DF26-853D4BE8D27C}"
  }
 }

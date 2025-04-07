@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	104297693	STA_HelmetEquip			\Default Work Unit\STA_HelmetEquip	
 	530992273	STA_GameState			\Default Work Unit\STA_GameState	
 
 State	ID	Name	State Group			Notes
+	748895195	None	STA_HelmetEquip			
+	1780230126	Equipped	STA_HelmetEquip			
+	2413814047	Unequipped	STA_HelmetEquip			
 	748895195	None	STA_GameState			
 	979765101	Win	STA_GameState			
 	1874288895	Idle	STA_GameState			
@@ -12,6 +16,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	712897226	MUS			\Default Work Unit\Master Audio Bus\MUS	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3153319960	FX_HelmetDistortion	Wwise Guitar Distortion			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

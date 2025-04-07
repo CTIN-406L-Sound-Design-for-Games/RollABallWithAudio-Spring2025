@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{2D170FAF-1347-FF13-A7EC-0148B795E84F}",
+    "Hash": "{CBB94A2D-EB2F-03FB-5DEF-AC870D66EAFB}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3153319960",
+       "Name": "FX_HelmetDistortion",
+       "ObjectPath": "\\Effects\\Default Work Unit\\FX_HelmetDistortion",
+       "GUID": "{8D8614C3-BE66-4036-8AC4-25C40DF7127F}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -39,7 +49,14 @@
       "Id": "393239870",
       "Name": "SFX",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX",
-      "GUID": "{861F86A1-3A57-496F-8969-181FEACE73C0}"
+      "GUID": "{861F86A1-3A57-496F-8969-181FEACE73C0}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3153319960"
+        }
+       ]
+      }
      },
      {
       "Id": "712897226",
@@ -87,6 +104,32 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "104297693",
+      "Name": "STA_HelmetEquip",
+      "ObjectPath": "\\States\\Default Work Unit\\STA_HelmetEquip",
+      "GUID": "{980EEFB5-0EE5-4BB4-B93F-77FD35D9596A}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_HelmetEquip\\None",
+        "GUID": "{1C96ADC4-D543-4109-B5B7-7099E55D9A1E}"
+       },
+       {
+        "Id": "1780230126",
+        "Name": "Equipped",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_HelmetEquip\\Equipped",
+        "GUID": "{6F075439-E162-4072-AB5C-A8B21186142B}"
+       },
+       {
+        "Id": "2413814047",
+        "Name": "Unequipped",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_HelmetEquip\\Unequipped",
+        "GUID": "{40754454-1E12-4719-90BD-7307CAA68B9C}"
+       }
+      ]
+     },
      {
       "Id": "530992273",
       "Name": "STA_GameState",
@@ -144,6 +187,6 @@
     ]
    }
   ],
-  "FileHash": "{82FA50A3-7197-68BB-8E89-5D0CF53A0D61}"
+  "FileHash": "{ADFF5497-676B-AE80-C0DB-0B51D2F2BA00}"
  }
 }

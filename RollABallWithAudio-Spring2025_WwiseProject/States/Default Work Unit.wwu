@@ -14,6 +14,13 @@
 						<State Name="Win" ID="{6382BC69-4B53-4D91-9E39-7F211819976D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="STA_HelmetEquip" ID="{980EEFB5-0EE5-4BB4-B93F-77FD35D9596A}">
+					<ChildrenList>
+						<State Name="None" ID="{1C96ADC4-D543-4109-B5B7-7099E55D9A1E}"/>
+						<State Name="Equipped" ID="{6F075439-E162-4072-AB5C-A8B21186142B}"/>
+						<State Name="Unequipped" ID="{40754454-1E12-4719-90BD-7307CAA68B9C}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

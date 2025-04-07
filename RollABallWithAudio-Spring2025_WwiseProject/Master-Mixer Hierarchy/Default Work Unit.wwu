@@ -10,7 +10,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="SFX" ID="{861F86A1-3A57-496F-8969-181FEACE73C0}"/>
+						<Bus Name="SFX" ID="{861F86A1-3A57-496F-8969-181FEACE73C0}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{91DA80ED-6078-42BF-88FB-B09CCEE95C58}" ShortID="998930977">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+														<ObjectRef Name="FX_HelmetDistortion" ID="{8D8614C3-BE66-4036-8AC4-25C40DF7127F}" WorkUnitID="{25B1BD2F-3F6C-4E24-965E-8E81C774CD39}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 						<Bus Name="UI" ID="{6F735E76-BC89-4391-8D31-D1B8DCBCF9C5}"/>
 						<Bus Name="MUS" ID="{0C4FC5AB-2A0C-4198-82BC-F58CD21D33F4}">
 							<PropertyList>
@@ -20,6 +36,27 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="STA_HelmetEquip" ID="{980EEFB5-0EE5-4BB4-B93F-77FD35D9596A}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Equipped" ID="{6F075439-E162-4072-AB5C-A8B21186142B}"/>
+										<CustomState Name="" ID="{40EF6B2C-29CD-4BDF-90BC-243AB0E3747A}" ShortID="133715134">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="65"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Unequipped" ID="{40754454-1E12-4719-90BD-7307CAA68B9C}"/>
+										<CustomState Name="" ID="{60C03DC3-E5F2-40DC-BCEF-5A7D6346A540}" ShortID="427489381"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 					</ChildrenList>
 				</Bus>
