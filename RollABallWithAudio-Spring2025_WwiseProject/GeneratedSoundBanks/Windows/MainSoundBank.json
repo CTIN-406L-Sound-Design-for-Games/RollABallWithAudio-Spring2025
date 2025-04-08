@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5006C980-DEF5-40E3-B055-2F8FD2307098}",
     "Language": "SFX",
-    "Hash": "{D50F7AC3-6F26-5031-D8B4-B0308354D819}",
+    "Hash": "{836E0621-0D94-FCD6-FB30-8A2956DC9DE6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundBank",
     "ShortName": "MainSoundBank",
     "Path": "MainSoundBank.bnk",
@@ -413,6 +413,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.4380623",
       "DurationMax": "2.244924",
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -486,6 +494,14 @@
        {
         "Id": "990570789"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
+       }
       ]
      },
      {
@@ -507,6 +523,14 @@
        {
         "Id": "1003779714"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
+       }
       ]
      },
      {
@@ -521,6 +545,14 @@
       "MediaRefs": [
        {
         "Id": "608928612"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
        }
       ]
      },
@@ -537,6 +569,14 @@
        {
         "Id": "610409004"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
+       }
       ]
      },
      {
@@ -544,6 +584,7 @@
       "Name": "Play_MUS_BGM",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MUS_BGM",
       "GUID": "{83B21C0C-0060-4CCC-94CB-CC9126D4BC6A}",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -557,6 +598,14 @@
        },
        {
         "Id": "731721196"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
        }
       ],
       "SwitchContainers": [
@@ -713,7 +762,15 @@
          "Id": "3025917178"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "2045521581",
+        "Name": "RVB_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RVB\\RVB_EarlyReflections",
+        "GUID": "{4464432F-E1F9-4EE2-A06A-105409793C91}"
+       }
+      ]
      },
      {
       "Id": "2823495579",
@@ -870,6 +927,6 @@
     ]
    }
   ],
-  "FileHash": "{3462D92D-ADB6-D6C0-DF26-853D4BE8D27C}"
+  "FileHash": "{3006A649-7B25-1929-7A57-86372A05C9B8}"
  }
 }

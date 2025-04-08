@@ -40,6 +40,7 @@
 				<ActorMixer Name="SFX" ID="{59B76F88-1DE8-42EC-81D4-2864BCE0840F}" ShortID="327264562">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -444,12 +445,20 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="PLR" ID="{160C2525-62C7-47A1-92E0-AEDE728F74AD}" ShortID="726290189">
+							<PropertyList>
+								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="RVB_EarlyReflections" ID="{4464432F-E1F9-4EE2-A06A-105409793C91}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -700,12 +709,20 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="FLY" ID="{5B541A82-5CE9-4AE7-9B18-0363EBA87CF1}" ShortID="628279225">
+							<PropertyList>
+								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="RVB_EarlyReflections" ID="{4464432F-E1F9-4EE2-A06A-105409793C91}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

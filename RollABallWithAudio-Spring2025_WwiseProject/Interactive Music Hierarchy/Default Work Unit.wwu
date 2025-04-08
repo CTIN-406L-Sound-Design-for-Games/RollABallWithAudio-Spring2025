@@ -5,15 +5,24 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="MUS_BGM" ID="{1CF62C64-E42E-4A8D-A78D-9F3A9059BB31}" ShortID="742732109">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 						<Property Name="Tempo" Type="Real64" Value="132"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ATT_Default" ID="{23310E71-A330-4A58-ADE9-D58F686AF3C8}" WorkUnitID="{D6A007F8-3BA6-4112-B440-6514A7E8B020}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="MUS" ID="{0C4FC5AB-2A0C-4198-82BC-F58CD21D33F4}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="RVB_EarlyReflections" ID="{4464432F-E1F9-4EE2-A06A-105409793C91}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -2367,7 +2376,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1CC20E3-9829-498A-9E41-C90F0E0FC4B0}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
+							<ObjectRef Name="MUS" ID="{0C4FC5AB-2A0C-4198-82BC-F58CD21D33F4}" WorkUnitID="{D8AF2886-5A65-4F48-9E44-86FB77DBE26F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

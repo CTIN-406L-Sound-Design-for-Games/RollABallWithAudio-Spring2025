@@ -97,9 +97,17 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUS = 712897226U;
+        static const AkUniqueID RVB = 695384145U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID RVB_EARLYREFLECTIONS = 2045521581U;
+        static const AkUniqueID RVB_FOREST = 1566008239U;
+        static const AkUniqueID RVB_ROOM = 2601656405U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
