@@ -4,6 +4,25 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 12: Music & Gameplay, Effects, Spatial Audio
+1. [Download the `week12-music-gameplay-effects-spatial-audio` version of the project](https://github.com/CTIN-406L-Sound-Design-for-Games/RollABallWithAudio-Spring2025/archive/refs/heads/week12-music-gameplay-effects-spatial-audio.zip)
+2. The following may be helpful reference:
+	- Unity:
+		- Assets/Scenes/Week12_MusicGameplay_Effects_SpatialAudio.unity
+		- Music & Gameplay:
+		    - Assets/Scripts/Audio/MusicManager.cs
+    	    - Assets/Scripts/Gameplay/NonPlayerBall.cs
+    	- Effects:
+		    - Assets/Scripts/Audio/HelmetAudioComponent.cs
+		    - Assets/Scripts/Gameplay/Helmet.cs
+	- Wwise:
+		- Effects:
+			- \Effects\Default Work Unit\FX_HelmetDistortion
+			- \Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+			- \Actor-Mixer Hierarchy\Default Work Unit\SFX\PLR\MVT_BallRolling_LP
+		- Spatial Audio:
+			- \Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RVB
+
 ## Week 10: Interactive Music
 1. [Download the `week10-interactive-music` version of the project](https://github.com/CTIN-406L-Sound-Design-for-Games/RollABallWithAudio-Spring2025/archive/refs/heads/week10-interactive-music.zip)
 2. The following may be helpful for **Project 3**:
